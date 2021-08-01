@@ -1,0 +1,20 @@
+<div class="mx-auto">
+    <div class="form-group col-lg-5 mx-auto">
+        <label for="State">
+            Select State
+        </label>
+        <select name="" class="form-control" id="state" #input (change)='updateValues(input.value)'>
+            <option value="{{s}}" *ngFor="let s of stateList">{{s}}</option>
+        </select>
+    </div>
+</div>
+<app-dashboard-card [firstDoseTotal]='firstDoseTotal' [secondDoseTotal]='secondDoseTotal' [totalDose]='totalDose'></app-dashboard-card>
+
+<div class="row">
+    <div class="col">
+        <google-chart [type]="chart.PieChart" [height]="chart.height" [data]="dataTable" style="width: 100%;" [options]="chart.options"></google-chart>
+    </div>
+    <div class="col">
+        <google-chart [type]="chart.ColumnChart" [height]="chart.height" [data]="dataTable" style="width: 100%;" [options]="chart.options"></google-chart>
+    </div>
+</div>

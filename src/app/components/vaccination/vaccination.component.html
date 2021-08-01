@@ -1,0 +1,22 @@
+
+
+
+<app-dashboard-card [firstDoseTotal]='firstDoseTotal' [secondDoseTotal]='secondDoseTotal' [totalDose]='totalDose'></app-dashboard-card>
+<br>
+<mat-card style="text-align: center;"> Select Dose Type:
+    <mat-radio-group aria-label="Select an option" [(ngModel)]="selectedDoseType">
+        <mat-radio-button value="firstDoseTotal" (change)="updateChart($event)">First Dose</mat-radio-button>
+        <mat-radio-button value="secondDoseTotal" (change)="updateChart($event)">Second Dose</mat-radio-button>
+        <mat-radio-button value="totalDose" (change)="updateChart($event)">Total Dose</mat-radio-button>
+      </mat-radio-group>
+</mat-card>
+<br>
+<div class="row">
+    <div class="col">
+        <google-chart [type]="chart.PieChart" [height]="chart.height" [data]="dataTable" style="width: 100%;" [options]="chart.options"></google-chart>
+    </div>
+    <div class="col">
+        <google-chart [type]="chart.ColumnChart" [height]="chart.height" [data]="dataTable" style="width: 100%;" [options]="chart.options"></google-chart>
+    </div>
+</div>
+

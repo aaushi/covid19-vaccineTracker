@@ -1,0 +1,104 @@
+<!-- <div class="row">
+    <div class="col p-3 m-3">
+      <div class="ui statistic">
+        <div class="label">
+          First Dose Total
+        </div>
+        <div class="value">
+         {{firstDoseTotal}}
+        </div>
+      </div>
+    </div>
+    <div class="col p-3 m-3">
+      <div class="ui statistic">
+        <div class="label">
+          Second Dose Total
+        </div>
+        <div class="value">
+          {{secondDoseTotal}}
+        </div>
+      </div>
+    </div>
+    <div class="col p-3 m-3">
+      <div class="ui statistic">
+        <div class="label">
+          Total Doses
+        </div>
+        <div class="value">
+          {{totalDose}}
+        </div>
+      </div>
+    </div>
+    
+  </div> -->
+<!-- 
+
+
+  <mat-grid-list cols="3" rowHeight="100px">
+    <mat-grid-tile>
+      <div class="label">
+        Total Doses
+      </div>
+      <div class="value">
+        {{totalDose}}
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="label">
+        Total Doses
+      </div>
+      <div class="value">
+        {{totalDose}}
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="label">
+        Total Doses
+      </div>
+      <div class="value">
+        {{totalDose}}
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list> -->
+<div class="row">
+  <div class="col">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>First Dose Total</mat-card-title>
+      </mat-card-header>
+      <!-- <img mat-card-image src="assets/images/firstdose.png" alt="first dose photo"> -->
+      <mat-card-content>
+        <p>
+         {{firstDoseTotal}}
+      </mat-card-content>
+    </mat-card>
+  </div>
+ 
+  <div class="col">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Second Dose Total</mat-card-title>
+      </mat-card-header>
+      <!-- <img mat-card-image src="assets/images/seconddose.png" alt="first dose photo"> -->
+      <mat-card-content>
+        <p>
+         {{secondDoseTotal}}
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="col">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Total Doses</mat-card-title>
+      </mat-card-header>
+      <!-- <img mat-card-image src="assets/images/totaldose.jpg" alt="first dose photo"> -->
+      <mat-card-content>
+        <p>
+         {{totalDose}}
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
